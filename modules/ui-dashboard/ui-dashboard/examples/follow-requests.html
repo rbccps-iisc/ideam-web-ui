@@ -26,6 +26,67 @@
   			background-color:    -moz-linear-gradient(#fff, #293f50);
   			background-color:         linear-gradient(#fff, #293f50);
       }
+
+      tbody>tr:hover .accept-btn{
+        background-color: white;
+      }
+
+      tbody>tr:hover .deny-btn{
+        background-color: white;
+      }
+
+      tbody>tr:hover .accept-btn{
+        background-color: white;
+      }
+
+      tbody>tr:hover .ui-1_check{
+        color:green;
+        font-weight: bold;
+      }
+
+      tbody>tr:hover .ui-1_simple-remove{
+        color: #FF523F;
+        font-weight: bold;
+      }
+
+       .accept-btn{
+        background-color: green;
+      }
+
+      .deny-btn{
+        background-color: #FF523F;
+      }
+
+      .accept-btn:hover{
+       background-color: green !important;
+       color: white !important;
+     }
+
+     .deny-btn:hover{
+       background-color: #FF523F !important;
+       color: white !important;
+     }
+
+     .accept-btn:hover .now-ui-icons{
+      color: white !important;
+    }
+
+    .deny-btn:hover .now-ui-icons{
+      color: white !important;
+    }
+
+      .now-ui-icons{
+        color: white;
+      }
+
+      .ui-1_check:hover{
+          color:green;
+      }
+
+      .ui-1_simple-remove:hover{
+        color:#FF523F;
+      }
+
     </style>
 </head>
 
@@ -53,10 +114,10 @@
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="../examples/follow-requests.html">
                             <i class="now-ui-icons ui-1_email-85"></i>
-                            <p>Follow Requests UI</p>
+                            <p>Follow Requests </p>
                         </a>
                     </li>
                     <li>
@@ -83,7 +144,7 @@
                             <p>User Profile</p>
                         </a>
                     </li>
-                    <li class="active">
+                    <li class="">
                         <a href="../examples/tables.html">
                             <i class="now-ui-icons design_bullet-list-67"></i>
                             <p>Table List</p>
@@ -180,123 +241,118 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title"> Entity List</h4>
+                                <h4 class="card-title"> Follow Requests <br> Entity: {entity-name} </h4>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <table class="table">
                                         <thead class=" text-primary">
                                             <th>
-                                                Entity-Property-1
+                                                Username of requester
                                             </th>
                                             <th>
-                                                Entity-Property-2
+                                                Allow / Deny
                                             </th>
-                                            <th>
-                                                Entity-Property-3
-                                            </th>
-                                            <th class="text-right">
-                                                Entity-Property-4
-                                            </th>
+
                                         </thead>
                                         <tbody>
-                                            <tr id="{replace with entity-key}" onclick="alert('clicked, get follow requests.')">
+                                            <tr id="{replace with entity-key}">
                                                 <td>
                                                     Dakota Rice
                                                 </td>
                                                 <td>
-                                                    Niger
+                                                  <button type="button" rel="tooltip" title="Accept" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral accept-btn" data-original-title="Accept Follow Request" onclick="alert('accept-follow-request-function-call')">
+                                                      <i class="now-ui-icons ui-1_check"></i>
+                                                  </button>
+                                                  <button type="button" rel="tooltip" title="Deny" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral deny-btn" data-original-title="Deny Follow Request" onclick="alert('deny-follow-request-function-call')">
+                                                      <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                  </button>
                                                 </td>
-                                                <td>
-                                                    Oud-Turnhout
-                                                </td>
-                                                <td class="text-right">
-                                                    $36,738
-                                                </td>
+
                                             </tr>
                                             <tr>
                                                 <td>
                                                     Minerva Hooper
                                                 </td>
                                                 <td>
-                                                    Curaçao
+                                                  <button type="button" rel="tooltip" title="Accept" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral accept-btn" data-original-title="Accept Follow Request" onclick="alert('accept-follow-request-function-call')">
+                                                      <i class="now-ui-icons ui-1_check"></i>
+                                                  </button>
+                                                  <button type="button" rel="tooltip" title="Deny" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral deny-btn" data-original-title="Deny Follow Request" onclick="alert('deny-follow-request-function-call')">
+                                                      <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                  </button>
                                                 </td>
-                                                <td>
-                                                    Sinaai-Waas
-                                                </td>
-                                                <td class="text-right">
-                                                    $23,789
-                                                </td>
+
                                             </tr>
                                             <tr>
                                                 <td>
                                                     Sage Rodriguez
                                                 </td>
                                                 <td>
-                                                    Netherlands
+                                                  <button type="button" rel="tooltip" title="Accept" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral accept-btn" data-original-title="Accept Follow Request" onclick="alert('accept-follow-request-function-call')">
+                                                      <i class="now-ui-icons ui-1_check"></i>
+                                                  </button>
+                                                  <button type="button" rel="tooltip" title="Deny" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral deny-btn" data-original-title="Deny Follow Request" onclick="alert('deny-follow-request-function-call')">
+                                                      <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                  </button>
                                                 </td>
-                                                <td>
-                                                    Baileux
-                                                </td>
-                                                <td class="text-right">
-                                                    $56,142
-                                                </td>
+
                                             </tr>
                                             <tr>
                                                 <td>
                                                     Philip Chaney
                                                 </td>
                                                 <td>
-                                                    Korea, South
+                                                  <button type="button" rel="tooltip" title="Accept" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral accept-btn" data-original-title="Accept Follow Request" onclick="alert('accept-follow-request-function-call')">
+                                                      <i class="now-ui-icons ui-1_check"></i>
+                                                  </button>
+                                                  <button type="button" rel="tooltip" title="Deny" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral deny-btn" data-original-title="Deny Follow Request" onclick="alert('deny-follow-request-function-call')">
+                                                      <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                  </button>
                                                 </td>
-                                                <td>
-                                                    Overland Park
-                                                </td>
-                                                <td class="text-right">
-                                                    $38,735
-                                                </td>
+
                                             </tr>
                                             <tr>
                                                 <td>
                                                     Doris Greene
                                                 </td>
                                                 <td>
-                                                    Malawi
+                                                  <button type="button" rel="tooltip" title="Accept" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral accept-btn" data-original-title="Accept Follow Request" onclick="alert('accept-follow-request-function-call')">
+                                                      <i class="now-ui-icons ui-1_check"></i>
+                                                  </button>
+                                                  <button type="button" rel="tooltip" title="Deny" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral deny-btn" data-original-title="Deny Follow Request" onclick="alert('deny-follow-request-function-call')">
+                                                      <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                  </button>
                                                 </td>
-                                                <td>
-                                                    Feldkirchen in Kärnten
-                                                </td>
-                                                <td class="text-right">
-                                                    $63,542
-                                                </td>
+
                                             </tr>
                                             <tr>
                                                 <td>
                                                     Mason Porter
                                                 </td>
                                                 <td>
-                                                    Chile
+                                                  <button type="button" rel="tooltip" title="Accept" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral accept-btn" data-original-title="Accept Follow Request" onclick="alert('accept-follow-request-function-call')">
+                                                      <i class="now-ui-icons ui-1_check"></i>
+                                                  </button>
+                                                  <button type="button" rel="tooltip" title="Deny" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral deny-btn" data-original-title="Deny Follow Request" onclick="alert('deny-follow-request-function-call')">
+                                                      <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                  </button>
                                                 </td>
-                                                <td>
-                                                    Gloucester
-                                                </td>
-                                                <td class="text-right">
-                                                    $78,615
-                                                </td>
+
                                             </tr>
                                             <tr>
                                                 <td>
                                                     Jon Porter
                                                 </td>
                                                 <td>
-                                                    Portugal
+                                                  <button type="button" rel="tooltip" title="Accept" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral accept-btn" data-original-title="Accept Follow Request" onclick="alert('accept-follow-request-function-call')">
+                                                      <i class="now-ui-icons ui-1_check"></i>
+                                                  </button>
+                                                  <button type="button" rel="tooltip" title="Deny" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral deny-btn" data-original-title="Deny Follow Request" onclick="alert('deny-follow-request-function-call')">
+                                                      <i class="now-ui-icons ui-1_simple-remove"></i>
+                                                  </button>
                                                 </td>
-                                                <td>
-                                                    Gloucester
-                                                </td>
-                                                <td class="text-right">
-                                                    $98,615
-                                                </td>
+
                                             </tr>
                                         </tbody>
                                     </table>
